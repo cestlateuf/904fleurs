@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@900&display=swap');
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    padding-top: 20%;
+    font-family: 'DM Sans', sans-serif;
+    justify-content: center;
+  }
+  
+  .project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .project-number {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    width: 40px;
+    text-align: left;
+  }
+
+  .project-name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 1.5em;
+  }
+
+  .project-name a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+@media screen and (max-width: 768px) {
+    .projects-list {
+      padding-top: 20%;
+      padding-left: 1.5em;
+    }
+  
+    .project-number {
+      font-size: 1.5rem;
+      width: 30px;
+    }
+  
+    .project-name  {
+      font-size: 1.5rem;
+    }
+  
+}

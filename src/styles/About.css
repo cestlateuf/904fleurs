@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@900&display=swap');
+
+
+.container-about {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+    background: linear-gradient(to bottom,
+            #448EE4 0%,
+            #448EE4 50%,
+            #C9E9D2 100%);
+}
+
+.page-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 5vw;
+    line-height: 0em;
+    letter-spacing: -4%;
+    color: #FFFFFF;
+    top: 10%;
+    left: 0;
+    padding-left: 1em;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+
+.footer {
+    position: relative;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.title-footer {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    color: #FFF;
+    font-size: 8vw;
+    bottom: -20vh;
+    letter-spacing: -6%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-about {
+        background: linear-gradient(to bottom,
+                #448EE4 0%,
+                #448EE4 50%,
+                #C9E9D2 100%);
+    }
+
+    
+}

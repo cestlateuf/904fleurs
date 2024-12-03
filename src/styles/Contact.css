@@ -1,16 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@900&display=swap');
 
-
 .container-contact {
+    height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+.container-contact video {
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+}
+
+.container-contact content {
     position: relative;
-    min-height: 100vh;
-    height: auto;
-    overflow: visible;
-    background: linear-gradient(to bottom,
-            #448EE4 0%,
-            #448EE4 50%,
-            #C9E9D2 100%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .page-title {
@@ -28,24 +61,11 @@
     z-index: 1;
 }
 
-.footer {
-    position: relative;
-    bottom: 1rem;
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
-}
-
-.title-footer {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 900;
-    color: #FFF;
-    font-size: 8vw;
-    bottom: -20vh;
-    letter-spacing: -6%;
-    position: fixed;
+.logo-contact {
+    position: absolute;
+    top: 20%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 @keyframes fadeIn {
@@ -57,12 +77,27 @@
     }
 }
 
+
+
 @media (max-width: 768px) {
+    .logo-contact {
+        height: 100px;
+        width: auto;
+    }
     .container-contact {
-        background: linear-gradient(to bottom,
-                #448EE4 0%,
-                #448EE4 50%,
-                #C9E9D2 100%);
+        overflow: hidden;
+    }
+
+    .container-contact video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-form {
+        width: 90%; /* Largeur adaptative */
+        max-width: 350px; /* Fixe une largeur maximale */
+        padding: 15px;
     }
     
 }

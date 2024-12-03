@@ -1,0 +1,104 @@
+/* Header principal */
+.header-contact {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent; /* Fond transparent */
+    /* backdrop-filter: blur(5px); */
+}
+
+/* Logo et lien à gauche */
+.header-left-contact .tab-name-contact {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2vw;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Liens de navigation à droite */
+.header-right-contact .nav-contact {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2vw;
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 3rem;
+}
+
+/* Hamburger menu */
+.hamburger-contact {
+    display: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* Animation pour le menu ouvert */
+@keyframes fadeIn-contact {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Mobile (max-width 768px) */
+@media (max-width: 768px) {
+
+    /* Header */
+    .header-contact {
+        padding-top: 0.5rem;
+    }
+
+    .header-left-contact .tab-name-contact {
+        padding-top: 0.5rem;
+        font-size: 10vw;
+    }
+
+    .header-right-contact .nav-contact {
+        font-size: 12vw;
+        transition: color 0.3s ease, transform 0.2s ease;
+        padding-top: 1.5rem;
+        padding-right: 2.5rem;
+    }
+
+    /* Hamburger menu visible sur mobile */
+    .hamburger-contact {
+        display: block;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1001;
+        color: #FFF;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Menu déroulant */
+    .header-right-contact {
+        display: none;
+    }
+
+    .header-right-contact.open-contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.4); /* Fond translucide */
+        backdrop-filter: blur(10px); /* Ajoute un flou au menu */
+        z-index: 999;
+        overflow: hidden;
+        animation: fadeIn-contact 0.3s ease-in-out;
+    }
+}

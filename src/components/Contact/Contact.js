@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "../../styles/Contact.css";
 import video from "../../assets/videos/contact_video.mp4";
-import logo from "../../assets/images/logo_904fleurs.gif";
+import logo from "../../assets/images/logo_gif.gif";
 import ContactForm from "./ContactForm";
 import HeaderContact from "../Header/HeaderContact";
 

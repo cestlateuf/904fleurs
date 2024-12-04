@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import video from '../../assets/videos/landing_video.mp4';
-import logo from '../../assets/images/logo_904fleurs.gif';
 import '../../styles/Landing.css';
 import { Link } from 'react-router-dom';
 

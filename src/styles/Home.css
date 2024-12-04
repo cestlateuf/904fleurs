@@ -28,15 +28,15 @@
 }
 
 .title-header {
-  font-size: 10vw;
+  font-size: 8rem;
   position: absolute;
-  top: 5vh;
+  top: 15vh;
   left: 50%;
   transform: translate(-50%);
 }
 
 .title-outro {
-  font-size: 7vw;
+  font-size: 7rem;
   top: 48vh;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -48,7 +48,7 @@
 .content-second {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 3rem;
   color: #FFF;
   text-align: left;
   letter-spacing: -6%;
@@ -58,11 +58,9 @@
 }
 
 .content-intro {
-  top: 75vh;
-}
-
-.content-second {
-  top: 120vh;
+  top: 70vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
 }
 
 .logo {
@@ -87,7 +85,7 @@
 .link {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
-  font-size: 5vw;
+  font-size: 5rem;
   letter-spacing: -6%;
   color: #FFF;
   text-decoration: none;
@@ -113,7 +111,7 @@
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   color: #FFF;
-  font-size: 2vw;
+  font-size: 2rem;
   letter-spacing: -6%;
 }
 
@@ -125,9 +123,9 @@
 }
 
 /* Tablet Styles */
-@media (max-width: 1024px) and (min-width: 769px) and (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: portrait) {
   .title-header {
-    font-size: 10vw;
+    font-size: 5rem;
     top: 20vh;
     position: absolute;
   }
@@ -135,12 +133,11 @@
   .title-outro {
     top: 30vh;
     position: relative;
-    font-size: 10vw;
+    font-size: 5rem;
   }
 
-  .content-intro,
-  .content-second {
-    font-size: 5vw;
+  .content-intro{
+    font-size: 3rem;
   }
 
   .content-intro {
@@ -150,7 +147,7 @@
   }
 
   .link {
-    font-size: 15vw;
+    font-size: 7rem;
   }
 
   .menu {
@@ -162,16 +159,16 @@
   }
 
   .footer {
-    font-size: 4vw;
+    font-size: 2rem;
     position: absolute;
     bottom: 0;
     padding-bottom: 10px;
   }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
   .title-header {
-    font-size: 10vw;
+    font-size: 5rem;
     top: 5vh;
     position: relative;
   }
@@ -222,17 +219,25 @@
     transform: translate(-50%, -50%);
   }
 
+  .logo {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 5vh;
+    height: 150px;
+    width: 150px;
+  }
+
   .title-outro {
-    font-size: 10vw;
+    font-size: 2.5rem;
     align-items: center;
     flex-direction: column;
     position: relative;
-    top: 20vh;
+    top: 35vh;
   }
 
-  .content-intro,
-  .content-second {
-    font-size: 5vw;
+  .content-intro{
+    font-size: 1.6rem;
   }
 
   .content-intro {
@@ -242,19 +247,22 @@
   }
 
   .link {
-    font-size: 15vw;
+    font-size: 4rem;
+    text-align: left;
   }
 
   .menu {
+    display: flex;
     flex-direction: column;
-    align-items: left;
-    top: 15vh;
-    left: 50%;
-    transform: translateX(-50%);
+    align-items: flex-start;
+    top: 25vh;
+    /* left: 10%; */
+    transform: translateX(0);
+    width: auto;
   }
 
   .footer {
-    font-size: 1em;
+    display: none;
   }
 }
 @media (max-width: 768px) and (orientation: landscape) {

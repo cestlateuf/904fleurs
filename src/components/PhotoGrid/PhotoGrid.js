@@ -12,12 +12,17 @@ import vignette5 from "../../assets/images/vignettes/5.png";
 import vignette6 from "../../assets/images/vignettes/6.png";
 import vignette7 from "../../assets/images/vignettes/7.png";
 import vignette8 from "../../assets/images/vignettes/8.png";
-import vignette9 from "../../assets/images/vignettes/5-min.gif";
-import vignette10 from "../../assets/images/vignettes/5_1-min.gif";
-import vignette11 from "../../assets/images/vignettes/5_2-min.gif";
+import vignette9 from "../../assets/images/vignettes/9.png";
+import vignette10 from "../../assets/images/vignettes/10.png";
+import vignette11 from "../../assets/images/vignettes/11.png";
 import vignette12 from "../../assets/images/vignettes/nass_shop-min.gif";
 import vignette13 from "../../assets/images/vignettes/nass_shop_1-min.gif";
-import vignette14 from "../../assets/images/vignettes/3-min.gif";
+import vignette14 from "../../assets/images/vignettes/12.png";
+import vignette15 from "../../assets/images/vignettes/13.png";
+import vignette16 from "../../assets/images/vignettes/14.png";
+import vignette17 from "../../assets/images/vignettes/15.png";
+import vignette18 from "../../assets/images/vignettes/16.png";
+import vignette19 from "../../assets/images/vignettes/17.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -146,7 +151,12 @@ const PhotoGrid = () => {
     vignette11,
     vignette12,
     vignette13,
-    vignette14
+    vignette14,
+    vignette15,
+    vignette16,
+    vignette17,
+    vignette18,
+    vignette19
   ];
 
   return (
@@ -154,7 +164,7 @@ const PhotoGrid = () => {
       <div className="content">
         <div className="grid" ref={gridRef}>
           <div className="grid-wrap">
-            {Array.from({ length: 10 }).map((_, i) => (
+            {Array.from({ length: 19 }).map((_, i) => (
               <div key={i} className="grid__item">
                 <div 
                   className="grid__item-inner" 

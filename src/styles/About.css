@@ -8,9 +8,9 @@
     height: auto;
     overflow: visible;
     background: linear-gradient(to bottom,
-            #448EE4 0%,
-            #448EE4 50%,
-            #C9E9D2 100%);
+    #448EE4 0%,
+    #448EE4 50%,
+    #CAA1FF 100%);
 }
 
 .page-title {
@@ -60,9 +60,9 @@
 @media (max-width: 768px) {
     .container-about {
         background: linear-gradient(to bottom,
-                #448EE4 0%,
-                #448EE4 50%,
-                #C9E9D2 100%);
+        #6989F3 0%,
+      #6989F3 50%,
+      #CAA1FF 100%);
     }
 
     

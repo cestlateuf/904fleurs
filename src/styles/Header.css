@@ -5,7 +5,7 @@
     padding: 1rem;
     top: 0;
     z-index: 1000;
-    background-color: #448EE4;
+    background-color: #6989F3;
 }
 
 .header-left .tab-name {
@@ -82,9 +82,9 @@
         width: 100vw;
         height: 100vh;
         background: linear-gradient(to bottom,
-            #448EE4 0%,
-            #448EE4 50%,
-            #C9E9D2 100%);
+        #6989F3 0%,
+      #6989F3 50%,
+      #CAA1FF 100%);
         z-index: 999;
         overflow: hidden;
         animation: fadeIn 0.3s ease-in-out;
@@ -135,9 +135,9 @@
         width: 100vw;
         height: 100vh;
         background: linear-gradient(to bottom,
-            #448EE4 0%,
-            #448EE4 50%,
-            #C9E9D2 100%);
+        #6989F3 0%,
+      #6989F3 50%,
+      #CAA1FF 100%);
         z-index: 999;
         overflow: hidden;
         animation: fadeIn 0.3s ease-in-out;

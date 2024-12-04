@@ -12,11 +12,6 @@ export default function Home() {
     <ReactLenis root options={{ lerp: 0.1, smoothWheel: true }}>
       <div className="container-home">
         <div className="intro">
-          <div className="clouds">
-            <Canvas camera={{ position: [0, 0, 2] }}>
-              <Cloud size={[6, 6]} />
-            </Canvas>
-          </div>
           <div className="logo">
             <img src={logo} alt="logo" height='200' width='200' />
           </div>
@@ -26,9 +21,6 @@ export default function Home() {
           <div className="content-intro">
             <p>Bienvenue sur le site de 904fleurs. Scrollez vers le bas pour voir un aperçu de nos projets.</p>
           </div>
-        </div>
-        <div className="content-second">
-          <p>Faites nous confiance. Dites bonjour à votre futur projet innovant. 904fleurs est là pour vous.</p>
         </div>
         <PhotoGrid />
         <div className="outro">

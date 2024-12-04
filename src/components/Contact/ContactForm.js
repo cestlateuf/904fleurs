@@ -73,7 +73,7 @@ const ContactForm = () => {
         </div>
         <div className="form-group">
           <div className="glass-label">
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject">Objet</label>
           </div>
           <input
             type="text"
@@ -100,7 +100,7 @@ const ContactForm = () => {
           />
         </div>
         <button type="submit" className="glass-button">
-          Send
+          Envoyer le message
         </button>
       </form>
     </div>

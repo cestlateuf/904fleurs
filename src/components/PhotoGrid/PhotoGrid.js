@@ -4,6 +4,21 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import imagesLoaded from 'imagesloaded';
 import '../../styles/PhotoGrid.css';
+import vignette1 from "../../assets/images/vignettes/1.png";
+import vignette2 from "../../assets/images/vignettes/2.png";
+import vignette3 from "../../assets/images/vignettes/3.png";
+import vignette4 from "../../assets/images/vignettes/4.png";
+import vignette5 from "../../assets/images/vignettes/5.png";
+import vignette6 from "../../assets/images/vignettes/6.png";
+import vignette7 from "../../assets/images/vignettes/7.png";
+import vignette8 from "../../assets/images/vignettes/8.png";
+import vignette9 from "../../assets/images/vignettes/5-min.gif";
+import vignette10 from "../../assets/images/vignettes/5_1-min.gif";
+import vignette11 from "../../assets/images/vignettes/5_2-min.gif";
+import vignette12 from "../../assets/images/vignettes/nass_shop-min.gif";
+import vignette13 from "../../assets/images/vignettes/nass_shop_1-min.gif";
+import vignette14 from "../../assets/images/vignettes/3-min.gif";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -102,33 +117,6 @@ const PhotoGrid = () => {
         }
       });
   };
-  // grid.style.setProperty('--grid-width', '105%');
-	// 		grid.style.setProperty('--grid-columns', '8');
-	// 		grid.style.setProperty('--perspective', '1500px');
-	// 		grid.style.setProperty('--grid-inner-scale', '0.5');
-			
-	// 		timeline
-	// 		.set(gridItems, {
-	// 			transformOrigin: '50% 0%',
-	// 			z: () => gsap.utils.random(-5000,-2000),
-	// 			rotationX: () => gsap.utils.random(-65,-25),
-	// 			filter: 'brightness(0%)'
-	// 		})	
-	// 		.to(gridItems, {
-	// 			xPercent: () => gsap.utils.random(-150,150),
-	// 			yPercent: () => gsap.utils.random(-300,300),
-	// 			rotationX: 0,
-	// 			filter: 'brightness(200%)'
-	// 		}, 0)
-	// 		.to(gridWrap, {
-	// 			z: 6500
-	// 		}, 0)
-	// 		.fromTo(gridItemsInner, {
-	// 			scale: 2
-	// 		}, {
-	// 			scale: 0.5
-	// 		}, 0);
-  //   }
 
 
   useEffect(() => {
@@ -144,17 +132,34 @@ const PhotoGrid = () => {
     };
   }, [lenis]);
 
+  const photos = [
+    vignette1,
+    vignette2,
+    vignette3,
+    vignette4,
+    vignette5,
+    vignette6,
+    vignette7,
+    vignette8,
+    vignette9,
+    vignette10,
+    vignette11,
+    vignette12,
+    vignette13,
+    vignette14
+  ];
+
   return (
 
       <div className="content">
         <div className="grid" ref={gridRef}>
           <div className="grid-wrap">
-            {Array.from({ length: 20 }).map((_, i) => (
+            {Array.from({ length: 10 }).map((_, i) => (
               <div key={i} className="grid__item">
                 <div 
                   className="grid__item-inner" 
                   style={{
-                    backgroundImage: `url(https://picsum.photos/400/300?random=${i})`
+                    backgroundImage: `url(${photos[i]})`
                   }}
                 />
               </div>

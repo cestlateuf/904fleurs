@@ -48,6 +48,58 @@
 
 /* --- RESPONSIVE DESIGN --- */
 
+@media (max-width: 1024px) and (min-width: 769px) {
+    
+        /* Header */
+        .header-contact {
+            padding-top: 1rem;
+        }
+    
+        .header-left-contact .tab-name-contact {
+            font-size: 4vw;
+        }
+    
+        .header-right-contact .nav-contact {
+            font-size: 12vw;
+            transition: color 0.3s ease, transform 0.2s ease;
+            padding-top: 1.5rem;
+        }
+    
+        /* Hamburger menu */
+        .hamburger-contact {
+            display: block;
+            top: 1rem;
+            right: 1rem;
+            z-index: 1001;
+            color: #FFF;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        /* Menu déroulant */
+        .header-right-contact {
+            display: none;
+        }
+    
+        .header-right-contact.open-contact {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.4); /* Fond translucide */
+            backdrop-filter: blur(10px); /* Ajoute un flou au menu */
+            z-index: 999;
+            overflow: hidden;
+            animation: fadeIn-contact 0.3s ease-in-out;
+        }
+}
+
 /* Mobile (max-width 768px) */
 @media (max-width: 768px) {
 

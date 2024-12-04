@@ -12,9 +12,7 @@ export default function Home() {
     <ReactLenis root options={{ lerp: 0.1, smoothWheel: true }}>
       <div className="container-home">
         <div className="intro">
-          <div className="logo">
-            <img src={logo} alt="logo" height='200' width='200' />
-          </div>
+            <img src={logo} alt="logo 904fleurs" className="logo" />
           <div className="title-header">
             <h1>904fleurs</h1>
           </div>

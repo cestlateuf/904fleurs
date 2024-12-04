@@ -37,10 +37,10 @@
 
 .title-outro {
   font-size: 6vw;
-  top: 250vh;
+  top: 50vh;
   transform: translate(-50%, -50%);
   left: 50%;
-  position: absolute;
+  position: relative;
 
 }
 
@@ -113,7 +113,7 @@
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   color: #FFF;
-  font-size: 4vw;
+  font-size: 2vw;
   letter-spacing: -6%;
 }
 

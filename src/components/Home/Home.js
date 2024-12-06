@@ -5,7 +5,7 @@ import { Cloud } from "../Cloud/Cloud";
 import PhotoGrid from "../PhotoGrid/PhotoGrid";
 import ReactLenis from "lenis/react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo_gif.gif";
+import logo from "../../assets/images/logo_anim.webp";
 
 export default function Home() {
   return (

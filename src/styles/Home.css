@@ -73,10 +73,12 @@
 }
 
 .menu {
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  margin: 0;
   padding: 0;
   position: relative;
   top: 30vh;
@@ -252,6 +254,7 @@
   }
 
   .menu {
+    list-style: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

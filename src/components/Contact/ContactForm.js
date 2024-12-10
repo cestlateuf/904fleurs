@@ -3,7 +3,6 @@ import '../../styles/ContactForm.css';
 
 
 const ContactForm = () => {
-    const [isOpen, setOpen] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
     subject: '',

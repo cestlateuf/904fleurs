@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useLayoutEffect } from 'react';
-import { ReactLenis, useLenis } from 'lenis/react';
+import { useLenis } from 'lenis/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import imagesLoaded from 'imagesloaded';
@@ -51,10 +51,9 @@ const PhotoGrid = () => {
   
   const totalItems = photos.length;
   
-  // Pré-calculer les valeurs aléatoires pour chaque item
-  const zValues = Array.from({ length: totalItems }, () => gsap.utils.random(-1600,200));
-  const xStartValues = Array.from({ length: totalItems }, () => gsap.utils.random(-1000,-500));
-  const xEndValues = Array.from({ length: totalItems }, () => gsap.utils.random(500,1000));
+  const zValues = Array.from({ length: totalItems }, () => gsap.utils.random(-1600, 200));
+  const xStartValues = Array.from({ length: totalItems }, () => gsap.utils.random(-1000, -500));
+  const xEndValues = Array.from({ length: totalItems }, () => gsap.utils.random(500, 1000));
 
   const applyAnimation = (grid) => {
     const gridWrap = grid.querySelector('.grid-wrap');
@@ -112,11 +111,9 @@ const PhotoGrid = () => {
     });
   };
 
-  // Configurer ScrollTrigger avec Lenis via scrollerProxy
   useLayoutEffect(() => {
     if (!lenis) return;
 
-    // Définir ScrollTrigger pour utiliser Lenis comme scroller
     ScrollTrigger.scrollerProxy(document.body, {
       scrollTop(value) {
         return arguments.length ? lenis.scrollTo(value, { immediate: true }) : lenis.scroll;
@@ -126,7 +123,6 @@ const PhotoGrid = () => {
       }
     });
 
-    // Boucle requestAnimationFrame pour synchroniser Lenis & ScrollTrigger
     const raf = (time) => {
       lenis.raf(time);
       ScrollTrigger.update();
@@ -139,16 +135,16 @@ const PhotoGrid = () => {
     };
   }, [lenis]);
 
-  // Charger les images avant d'appliquer l'animation
   useEffect(() => {
     if (!gridRef.current) return;
 
-    imagesLoaded(gridRef.current, { background: true }, () => {
-      applyAnimation(gridRef.current);
-      // Actualiser ScrollTrigger après l'initialisation de l'animation
+    const grid = gridRef.current;
+
+    imagesLoaded(grid, { background: true }, () => {
+      applyAnimation(grid);
       ScrollTrigger.refresh();
     });
-  }, [gridRef]);
+  }, [gridRef, applyAnimation]);
 
   return (
     <div className="content">
@@ -167,4 +163,5 @@ const PhotoGrid = () => {
     </div>
   );
 };
+
 export default PhotoGrid;

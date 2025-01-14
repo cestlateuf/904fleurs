@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "slug": "comment-devenir-un-artiste",
+        "title": "Comment devenir un artiste ? | Cinematic vlog",
+        "description": "Une description du projet 1",
+        "youtubeLink": "https://www.youtube.com/watch?v=xglnlVhrDM4",
+        "duration": "4min43",
+        "date": "2025-01-01",
+        "backgroundVideo": "/videos/project1.mp4",
+        "imagePath": "/images/project1.jpg"
+    },
+    {
+        "id": 2,
+        "slug": "passer-de-zero-a-heros",
+        "title": "Passer de zéro à héros | Nekketsu épisode 0",
+        "description": "Une description du projet 2",
+        "youtubeLink": "https://youtu.be/Hnzj0fIuD1s?si=2VwUPpgkYhWw-C6s",
+        "duration": "4min43",
+        "date": "2025-01-01",
+        "backgroundVideo": "/videos/project2.mp4",
+        "imagePath": "/images/project2.jpg"
+    },
+    {
+        "id": 3,
+        "slug": "devenir-riche",
+        "title": "Venez on essaye de devenir riche... | Nekketsu 1",
+        "description": "Une description du projet 3",
+        "youtubeLink": "https://youtu.be/4Gh68bCdDa4?si=HrMMis5IsJ6rFS17",
+        "duration": "4min43",
+        "date": "2025-01-01",
+        "backgroundVideo": "/videos/project3.mp4",
+        "imagePath": "/images/project3.jpg"
+    },
+    {
+        "id": 4,
+        "slug": "victimes-de-la-flemme",
+        "title": "À nous, les victimes de la flemme | Nekketsu épisode 2",
+        "description": "Une description du projet 4",
+        "youtubeLink": "https://www.youtube.com/watch?v=knZEWjxIqv0",
+        "duration": "4min43",
+        "date": "2025-01-01",
+        "backgroundVideo": "/videos/project4.mp4",
+        "imagePath": "/images/project4.jpg"
+    },
+    {
+        "id": 5,
+        "slug": "faire-le-maximum",
+        "title": "Faire le maximum en 1 nuit | Nekketsu Hors-série #1",
+        "description": "Une description du projet 5",
+        "youtubeLink": "https://youtu.be/WWUXB9T-zS0?si=45GYnCu_Pe6_Uze2",
+        "duration": "4min43",
+        "date": "2025-01-01",
+        "backgroundVideo": "/videos/project5.mp4",
+        "imagePath": "/images/project5.jpg"
+    }
+]

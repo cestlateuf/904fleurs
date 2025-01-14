@@ -1,72 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@900&display=swap');
-
 .container {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overscroll-behavior: none;
-  margin: 0;
-  padding: 0;
-}
-
-.video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.container video {
-    overflow: hidden;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    
-}
-
-.vignette::after {
-  overflow: hidden;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle at top left, 
-    rgba(0, 0, 0, 0.9) 0%, 
-    rgba(0, 0, 0, 0) 20%
-  ),
-  radial-gradient(
-    circle at top right, 
-    rgba(0, 0, 0, 0.9) 0%, 
-    rgba(0, 0, 0, 0) 20%
-  ),
-  radial-gradient(
-    circle at bottom left, 
-    rgba(0, 0, 0, 0.9) 0%, 
-    rgba(0, 0, 0, 0) 20%
-  ),
-  radial-gradient(
-    circle at bottom right, 
-    rgba(0, 0, 0, 0.9) 0%, 
-    rgba(0, 0, 0, 0) 20%
-  );
-  pointer-events: none;
-  z-index: -1;
+  position: fixed;
+  background-color: #2C2C2C;
+  overflow: hidden;
 }
 
 .logo {
@@ -74,61 +11,6 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
+    width: 700px;
     height: auto;
 }
-
-.title-landing {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 900;
-    font-size: 10vw;
-    line-height: 0em;
-    letter-spacing: -4%;
-    color: #FFFFFF;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      height: 100dvh;
-      overflow: hidden;
-      position: fixed;
-    }
-
-    body.landing-page {
-      overflow: hidden;
-      overscroll-behavior: none;
-  }
-  
-    .title-landing {
-      font-size: 8vw;
-      top: 60%;
-    }
-  
-    .vignette::after {
-      background: radial-gradient(
-        circle at top left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 15%
-      ),
-      radial-gradient(
-        circle at top right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 15%
-      ),
-      radial-gradient(
-        circle at bottom left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 15%
-      ),
-      radial-gradient(
-        circle at bottom right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 15%
-      );
-    }
-  
-    .container video {
-      object-fit: cover;
-      width: 100%;
-      height: 100dvh;
-    }
-  }

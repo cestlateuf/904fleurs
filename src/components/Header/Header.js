@@ -1,52 +1,61 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/Header.css";
-import { Squeeze } from "hamburger-react";
+import logo from "../../assets/images/logo_4.svg";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
+
   return (
-    <header className="header">
-      {/* Logo ou titre du site */}
-      <div className="header-left">
-        <a href="/accueil" className="tab-name" aria-label="Retour à l'accueil">
-          904fleurs
-        </a>
-      </div>
+    <>
+      <header className={`header ${isOpen ? "hidden-header" : ""}`}>
+        <Link to="/accueil" aria-label="Retour à l'accueil" className="header-logo">
+          <img src={logo} alt="Logo de 904fleurs" className="header-logo" />
+        </Link>
+        <button
+          className="header-right"
+          onClick={toggleMenu}
+          aria-controls="MobileNavDrawer"
+          title="Ouvrir le menu"
+        >
+          MENU
+        </button>
+      </header>
 
-      {/* Menu hamburger pour mobile */}
-      <div className="hamburger">
-        <Squeeze
-          toggled={isOpen}
-          toggle={setOpen}
-          label="Afficher ou masquer le menu"
-          hideOutline={false} // Laisser l'outline visible pour l'accessibilité
-        />
-      </div>
-
-      {/* Menu de navigation */}
-      <nav
-        className={`header-right ${isOpen ? "open" : ""}`}
-        aria-label="Navigation principale"
-      >
-        <ul className="nav-list" aria-hidden={!isOpen}>
-          <li>
-            <a href="/projets" className="nav" aria-label="Accéder à la page des projets">
-              Projets
-            </a>
-          </li>
-          <li>
-            <a href="/a-propos" className="nav" aria-label="Accéder à la page À propos">
-              À propos
-            </a>
-          </li>
-          <li>
-            <a href="/contact" className="nav" aria-label="Accéder à la page de contact">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      {isOpen && (
+        <nav className="menu">
+          <button
+            className="close-menu"
+            onClick={toggleMenu}
+            aria-label="Fermer le menu"
+          >
+            FERMER
+          </button>
+          <ul>
+            <li><Link to="/a-propos">À propos</Link></li>
+            <li><Link to="/projets">Projets</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/events">Événements</Link> <span>Coming Soon</span></li>
+            <li><Link to="/shop">Boutique</Link> <span>Coming Soon</span></li>
+          </ul>
+        </nav>
+      )}
+      {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
+    </>
   );
 }

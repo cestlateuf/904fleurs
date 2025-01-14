@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "firebase": "^11.1.0",
     "gsap": "^3.12.5",
     "hamburger-react": "^2.5.1",
     "imagesloaded": "^5.0.0",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^5.2.0"
   }
 }

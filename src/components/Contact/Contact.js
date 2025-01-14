@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/Contact.css";
 import video from "../../assets/videos/contact_video.mp4";
-import logo from "../../assets/images/logo_gif.gif";
 import ContactForm from "./ContactForm";
 import HeaderContact from "../Header/HeaderContact";
 import { Helmet } from "react-helmet";
@@ -22,9 +21,6 @@ export default function Contact() {
                 <video src={video} autoPlay loop muted playsInline />
             </div>
             <div className="contact-content">
-                <div className="logo-contact">
-                    <img src={logo} alt="logo 904fleurs" height="150px" width="150px" />
-                </div>
                 <ContactForm />
             </div>
 

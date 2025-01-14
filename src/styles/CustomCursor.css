@@ -1,0 +1,8 @@
+.custom-cursor {
+    position: fixed;
+    width: 50px; /* Ajustez la taille */
+    height: 50px;
+    pointer-events: none; /* Empêche les interactions */
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }

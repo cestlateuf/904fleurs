@@ -1,0 +1,62 @@
+.container-policy {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    background-color: #FFF9E9;
+    padding: 0;
+}
+
+.policy-content {
+    position: relative;
+    padding: 0;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.policy-content h1 {
+    font-family: 'Sneaky-Times';
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+    color: #361F0F;
+}
+
+.policy-content h2 {
+    font-family: 'Sneaky-Times';
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    color: #361F0F;
+}
+
+.policy-content p {
+    font-family: 'Sneaky-Times';
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: #361F0F;
+}
+
+.policy-content a {
+    font-family: 'Sneaky-Times';
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: #361F0F;
+    text-decoration: none;
+}
+
+.policy-content li {
+    font-family: 'Sneaky-Times';
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: #361F0F;
+    list-style-type: none;
+}
+

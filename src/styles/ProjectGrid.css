@@ -1,0 +1,50 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 colonne par défaut */
+  padding: 10px 40px; /* Réduire le padding latéral */
+  justify-content: center; /* Centre les colonnes dans la page */
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur écrans plus grands */
+    gap: 10px; /* Réduire l'espace entre les éléments */
+    padding: 3% 80px; /* Ajuster le padding latéral pour tablette/desktop */
+  }
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project-image {
+  width: 70%; /* Augmenter la largeur de l'image pour un rendu centré */
+  height: auto;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 5px; /* Réduire le padding entre l'image et les textes */
+}
+
+.project-info h3 {
+  color: #361F0F;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0; /* Réduire l'espace autour du titre */
+}
+
+.view-more {
+  font-size: 16px; /* Réduire la taille du lien */
+  color: #361F0F;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+}

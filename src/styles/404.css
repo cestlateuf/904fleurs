@@ -1,0 +1,38 @@
+.container-404 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    background-color: #FFF9E9;
+    padding: 0;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    padding-top: 20%;
+
+}
+
+.message {
+    font-family: 'Sneaky-Times';
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    color: #361F0F;
+}
+
+.logo img {
+    position: relative;
+    height: 150px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+

@@ -1,0 +1,71 @@
+.about-content {
+    display: flex;
+    height: calc(100vh - 100px); /* Ajustez selon la hauteur de votre header/footer */
+}
+
+.titles {
+    width: 25%;
+    background-color: #fff9e9;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.title {
+    font-size: 2rem;
+    top: 20%;
+    left: 20%;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.title.active {
+    padding: 5px;
+    background-color: #361f0f;
+    color: #fff;
+}
+
+.content-section {
+    display: none; /* Toutes les sections sont masquées par défaut */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    top : 20%;
+}
+
+.content-section.visible {
+    display: block; /* Affiche uniquement la section active */
+    opacity: 1;
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content-section h2 {
+    font-size: 5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #361f0f;
+}
+
+.content-section p {
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #361f0f;
+}
+
+.content-section li {
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #361f0f;
+}

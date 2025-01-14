@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@900&display=swap');
 
+@font-face {
+  font-family: 'Sneaky-Times';
+  src: url(./assets/fonts/Sneaky-Times.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  cursor: url(./assets/images/mouse.svg), 32 32, auto;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'DM Sans',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Sneaky-Times', -apple-system, BlinkMacSystemFont, 'DM Sans', sans-serif;
 }
 
 code {

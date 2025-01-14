@@ -1,14 +1,15 @@
 import React from "react";
 import "../../styles/About.css";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import AboutContent from "./AboutContent";
 
 export default function About() {
-    return(
+    return (
         <div className="container-about">
             <Header />
-            <div className="page-title">
-                <h1>À propos</h1>
-            </div>
+            <AboutContent />
+            <Footer />
         </div>
     );
 }
